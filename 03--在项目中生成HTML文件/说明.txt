@@ -1,0 +1,24 @@
+案例1：
+     安装   html-webpack-plugin插件  配置webpack.config.js   自动生成HTML文件
+
+案例2  
+     webpak会自动生成以我们想要的模板（根目录下的index.html）为基本的HTML，将打包后的js文件自动加载在该HTML中
+
+案例3
+    改变自动生成的index.html的位置，使其与打包编译的js不在一个文件夹
+
+案例4
+    html插件的options参数
+
+案例5
+    html插件的files,利用这个属性将打包的js文件分别放生成的HTML的head和body中
+
+案例6
+   实战上线时配置的属性
+	1.将地址改为线上地址
+        2.压缩代码
+案例7
+   简单的多页面应用
+	不同的页面引入不同的打包后的js
+案例8
+   为了减少http请求，有些js我们是可以内嵌到HTML中的

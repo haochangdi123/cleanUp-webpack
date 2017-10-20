@@ -1,0 +1,2 @@
+
+    html插件的files,利用这个属性将打包的js文件分别放生成的HTML的head和body中

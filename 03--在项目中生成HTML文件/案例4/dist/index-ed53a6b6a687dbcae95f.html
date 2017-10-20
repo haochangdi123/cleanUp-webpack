@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 这里利用ejs的语法，获取htmlWebpackPlugin(名字来自于webpack.config.js的require命名)插件中参数的title属性值 -->
+	<title>我来自参数</title>
+<script type="text/javascript" src="js/main-b4b6ec344ea4b7fc53c8.js"></script><script type="text/javascript" src="js/hello-b4b6ec344ea4b7fc53c8.js"></script></head>
+<body>
+	<script type="text/javascript" src='jquery.js'></script>
+	<h2>
+		现在的时间是：Fri Oct 13 2017 10:03:45 GMT+0800 (中国标准时间)
+	</h2>
+</body>
+</html>
+
+
+"htmlWebpackPlugin": {
+//files其实就是指自动编译的HTML文件
+  "files": {
+  	//引用的css文件
+    "css": [ "main.css" ],
+    //当前引用的打包后的js数组
+    "js": [ "assets/head_bundle.js", "assets/main_bundle.js"],
+    //webpack.config.js中用于打包的两个chaunk
+    "chunks": {  	
+      "head": {
+      	//打包后js文件名
+        "entry": "assets/head_bundle.js",
+        //打包后css文件名
+        "css": [ "main.css" ]
+      },
+      "main": {
+        "entry": "assets/main_bundle.js",
+        "css": []
+      },
+    }
+  }
+}

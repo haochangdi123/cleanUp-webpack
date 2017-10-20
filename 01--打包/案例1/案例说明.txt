@@ -1,0 +1,2 @@
+1.新建hellow.js
+通过 webpack hellow.js hellow.bundle.js 命令  生成 hellow.bundle.js

@@ -1,0 +1,2 @@
+
+     webpak会自动生成以我们想要的模板（根目录下的index.html）为基本的HTML，将打包后的js文件自动加载在该HTML中

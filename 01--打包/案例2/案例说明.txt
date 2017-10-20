@@ -1,0 +1,4 @@
+案例2
+	新建hellow.js    world.js      
+	hello.js引用world.js 
+	通过 webpack hellow.js hellow.bundle.js 命令  生成 hellow.bundle.js

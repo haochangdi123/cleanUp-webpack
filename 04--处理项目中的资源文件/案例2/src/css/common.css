@@ -1,0 +1,16 @@
+html,body{
+	padding:0;
+	margin:0;
+	background:red;
+}
+
+ul,li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+// flex的兼容性不好
+//使用postcss-loader的autoprefixer插件自动加上浏览器兼容
+.flex-div{
+	display: flex;
+}

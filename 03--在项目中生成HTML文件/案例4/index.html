@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 这里利用ejs的语法，获取htmlWebpackPlugin(名字来自于webpack.config.js的require命名)插件中参数的title属性值 -->
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<script type="text/javascript" src='jquery.js'></script>
+	<h2>
+		现在的时间是：<%= htmlWebpackPlugin.options.date%>
+	</h2>
+</body>
+</html>

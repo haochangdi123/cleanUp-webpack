@@ -1,0 +1,6 @@
+src     		  放置源文件的目录
+dist     		  放置打包后文件的目录
+index.html  		  初始化页面
+webpack.config.js         webapck的配置文件    (具体的配置在文档  API->configuration)
+为何建立webpack.config.js    是因为在命令行中执行webpack会默认寻找目录下的webpack.config.js，以webpack.config.js的配置去运行 
+当然也可以说webpack --config hcd.js   执行hcd.js中的配置

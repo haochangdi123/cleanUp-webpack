@@ -1,0 +1,9 @@
+<div class='layerejs'>
+	//在模板中引用img文件
+	<img src="../../assets/img.jpg">   //失败
+	<img src="${require('../../assets/img.jpg')}">  //成功
+	<div>this is <%= name %> layerejs</div>
+	<% for(var i = 0;i < arr.length; i++){ %>
+		<%= arr[i]%>
+	<% } %>
+</div>

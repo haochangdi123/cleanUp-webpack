@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+	<script type="text/javascript">
+		//获取打包后chunk d的文件地址，因为我们采用的是publicPath,所以绝对地址是publicPath
+		绝对地址:<%= 
+		htmlWebpackPlugin.files.chunks.d.entry 
+		%>
+		//获取去除publicPath绝对地址的d的打包js地址
+		去除绝对地址:<%= 
+		htmlWebpackPlugin.files.chunks.d.entry.substr(htmlWebpackPlugin.files.publicPath.length)
+		%>
+		//获取d打包后的代码
+		js代码:<%= 
+		compilation.assets[htmlWebpackPlugin.files.chunks.d.entry.substr(htmlWebpackPlugin.files.publicPath.length)].source()
+		%>
+	</script>
+</head>
+<body>
+	<!-- 因为每一个自动生成的html都是要引入两个js的,除了内嵌的,还有http请求的一个,（注意先要在webpack.config.js中间enject设置为false，否则会直接建两个js文件引入） -->
+	<% for(var key in htmlWebpackPlugin.files.chunks){ %>
+		<% if( key !== 'd'){ %>
+				<script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[key].entry%>"></script>
+		<% } %>
+	<%}%>
+</body>
+</html>

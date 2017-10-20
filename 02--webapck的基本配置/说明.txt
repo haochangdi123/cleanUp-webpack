@@ -1,0 +1,14 @@
+案例1：   
+    配置webpack.config.js文件   通过webpack  直接执行webpack.config.js文件
+
+案例2:
+   配置package.json,使其可以便捷的通过npm run webpack 执行命令
+
+案例3：
+   entry: ["./entry1", "./entry2"]     改变entry入口文件的方式位数组
+
+案例4:
+   entry采用对象的方式，
+	将不同的js分别打包
+   output.fileNmae
+	生成不同的打包文件名称

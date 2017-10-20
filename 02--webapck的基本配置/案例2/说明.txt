@@ -1,0 +1,8 @@
+src     		  放置源文件的目录
+dist     		  放置打包后文件的目录
+index.html  		  初始化页面
+webpack.config.js         webapck的配置文件    (具体的配置在文档  API->configuration)
+
+
+在package.json文件中加入     ‘webpack’：‘真正执行的的代码’
+这样一来   npm run webapck      就可以执行‘真正执行的的代码’了
